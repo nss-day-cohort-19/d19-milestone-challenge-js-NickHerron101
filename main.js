@@ -1,4 +1,4 @@
-s
+
 var number = document.getElementById("number");
 
 var characterType = document.getElementById("characterType");
@@ -9,7 +9,7 @@ function treeBuild (event) {
 	if (number.value === "" || characterType.value === "") {
 		alert("You need to type something");
 	}
-for (var i = 1; i < number.value; i++) {
+for (var i = 1; i <= number.value; i++) {
 	var treeHeight = number.value - i;
 	var firstRow = characterType.value.repeat(i);
 	var secondHalf = " ".repeat(treeHeight);
