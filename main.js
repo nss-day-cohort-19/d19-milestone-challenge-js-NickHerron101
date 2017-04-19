@@ -9,7 +9,7 @@ function treeBuild (event) {
 	if (number.value === "" || characterType.value === "") {
 		alert("You need to type something");
 	}
-for (var i = 1; i < number.value; i++) {
+for (var i = 1; i <= number.value; i++) {
 	var treeHeight = number.value - i;
 	var firstRow = characterType.value.repeat(i);
 	var secondHalf = " ".repeat(treeHeight);
@@ -18,7 +18,7 @@ for (var i = 1; i < number.value; i++) {
  }
 }
 
-number.addEventListener("keypress", function(e){
+number.addEventListener("keypress", function(e) {
 	var key = e.keyCode;
 	if (e.keyCode === 13) {
 		treeBuild();
