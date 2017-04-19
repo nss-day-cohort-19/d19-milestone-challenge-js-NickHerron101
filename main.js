@@ -1,4 +1,4 @@
-
+s
 var number = document.getElementById("number");
 
 var characterType = document.getElementById("characterType");
@@ -18,7 +18,7 @@ for (var i = 1; i < number.value; i++) {
  }
 }
 
-number.addEventListener("keypress", function(e){
+number.addEventListener("keypress", function(e) {
 	var key = e.keyCode;
 	if (e.keyCode === 13) {
 		treeBuild();
